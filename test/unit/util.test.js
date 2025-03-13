@@ -27,13 +27,10 @@ describe("#Util - String", () => {
     expect(result).toBe(expected);
   });
 
-  test.todo(
-    "#upperCaseFirstLetter give an empty string it should return empty",
-    () => {
-      const data = "";
-      const expected = "";
-      const result = Util.upperCaseFirstLetter(data);
-      expect(result).toBe(expected);
-    }
-  );
+  test("#upperCaseFirstLetter give an empty string it should return empty", () => {
+    const data = "";
+    const expected = "";
+    const result = Util.upperCaseFirstLetter(data);
+    expect(result).toBe(expected);
+  });
 });

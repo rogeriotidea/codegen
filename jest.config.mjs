@@ -5,7 +5,7 @@
 /** @type {import('jest').Config} */
 export default {
   clearMocks: true,
-  collectCoverage: true,
+  collectCoverage: false,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   coverageReporters: ["json", "text", "lcov", "clover"],
@@ -19,8 +19,8 @@ export default {
       statements: 100,
     },
   },
+  testEnvironment: "node",
   maxWorkers: "50%",
-  textEnvironment: "node",
   watchIgnorePatterns: ["node_modules"],
   transformIgnorePatterns: ["node_modules"],
 };
